@@ -36,7 +36,7 @@ export default class Dictionary {
 			}
 		}
 	}
-	public async types(force: boolean) {
+	public async types(force?: boolean) {
 		if (!types || force) {
 			const query = new Query('types', this.token);
 			const { data } = await query.fetch();
@@ -44,7 +44,7 @@ export default class Dictionary {
 		}
 		return types;
 	}
-	public async subtypes(force: boolean) {
+	public async subtypes(force?: boolean) {
 		if (!subtypes || force) {
 			const query = new Query('subtypes', this.token);
 			const { data } = await query.fetch();
@@ -52,7 +52,7 @@ export default class Dictionary {
 		}
 		return subtypes;
 	}
-	public async supertypes(force: boolean) {
+	public async supertypes(force?: boolean) {
 		if (!supertypes || force) {
 			const query = new Query('supertypes', this.token);
 			const { data } = await query.fetch();
@@ -60,7 +60,7 @@ export default class Dictionary {
 		}
 		return supertypes;
 	}
-	public async rarities(force: boolean) {
+	public async rarities(force?: boolean) {
 		if (!rarities || force) {
 			const query = new Query('rarities', this.token);
 			const { data } = await query.fetch();
