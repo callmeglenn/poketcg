@@ -1,0 +1,21 @@
+{
+  "name": "poketcg",
+  "version": "1.0.0",
+  "description": "Typescript SDK for the PokemonTCG API (https://pokemontcg.io)",
+  "main": "index.js",
+  "keywords": [
+    "PokemonTCG",
+    "Typescript",
+    "SDK",
+    "API"
+  ],
+  "author": "glenn.mt",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "qs": "^6.11.0"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.7"
+  }
+}
