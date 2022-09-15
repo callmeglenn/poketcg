@@ -1,6 +1,6 @@
 {
   "name": "poketcg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript SDK for the PokemonTCG API (https://pokemontcg.io)",
   "main": "lib/index.js",
   "keywords": [
