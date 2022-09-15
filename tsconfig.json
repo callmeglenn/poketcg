@@ -5,7 +5,10 @@
 		"target": "ES2022",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
-		"module": "CommonJS"
+		"module": "CommonJS",
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"declaration": true
 	},
 	"include": ["src/**/*"]
 }

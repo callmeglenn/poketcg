@@ -1,0 +1,33 @@
+import { Ability, AncientTrait, Attack, CardImages, CardMarket, CardProperties, Legalities, Resistance, SetProperties, TCGPlayer, Weakness } from "../typings/types";
+export default class Card implements CardProperties {
+    id: string;
+    name: string;
+    supertype?: string;
+    subtypes?: string[];
+    level?: string;
+    hp: string;
+    types: string[];
+    evolvesFrom?: string;
+    evolvesTo?: string[];
+    rules: string[];
+    ancientTrait?: AncientTrait;
+    abilities?: Ability[];
+    attacks: Attack[];
+    weaknesses: Weakness[];
+    resistances: Resistance[];
+    retreatCost: string[];
+    convertedRetreatCost: number;
+    set: SetProperties;
+    number: string;
+    artist: string;
+    rarity: string;
+    flavorText?: string;
+    nationalPokedexNumbers: number[];
+    legalities: Legalities;
+    regulationMark: string;
+    images: CardImages;
+    tcgplayer: TCGPlayer;
+    cardmarket: CardMarket;
+    token?: string;
+    constructor(properties: CardProperties, token?: string);
+}
